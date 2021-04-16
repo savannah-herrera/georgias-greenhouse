@@ -4,7 +4,7 @@ import React from "react"
 export default function MainNav() {
     return (
         <ul className="mainNav">
-            {/* <li><Link to="/index"><span role="img" aria-label="house emoji">🏡 </span>Home</Link></li> */}
+            <li><Link to="/"><span role="img" aria-label="house emoji">🏡 </span>Home</Link></li>
             <li><Link to="/contact"><span role="img" aria-label="telephone receiver emoji">📞 </span>Contact</Link></li>
             <li><Link to="/plants"><span role="img" aria-label="potted plant emoji">🪴 </span>Plants</Link></li>
             <li><Link to="/supplies"><span role="img" aria-label="gloves emoji">🧤 </span>Supplies</Link></li>

@@ -1,7 +1,12 @@
 import React from "react"
 import MainNav from "../components/mainNav.js"
+// import { Link } from "gatsby"
 import 'bootstrap/dist/css/bootstrap.css'
 import logo from "../images/greenhouse-logo.png"
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import TwitterIcon from '@material-ui/icons/Twitter';
+
 
 export default function MainTemplate({ children }) {
     return (
@@ -10,7 +15,7 @@ export default function MainTemplate({ children }) {
 
                 <div className="row">
                     <div className="col-1"></div>
-                    <img src={logo} alt="greenhouse-logo" className="col-10 logo"></img>
+                    <img src={logo} alt="greenhouse-logo" className="col-10" id="logo"></img>
                     <div className="col-1"></div>
                 </div>
                 <div className="row">
@@ -29,14 +34,18 @@ export default function MainTemplate({ children }) {
             <footer>
                 <div className="container">
                     <div className="row">
-                        <div className="col-sm-2">
-                            [social icons]
+                        <div className="col-sm-2 col-2">
+                            <ul>
+                                <li> <img src={FacebookIcon} alt="facebook-icon"></img></li>
+                                <li> <img src={InstagramIcon} alt="instagram-icon"></img></li>
+                                <li> <img src={TwitterIcon} alt="twitter-icon"></img></li>
+                            </ul>
                         </div>
 
-                        <div className="col-sm-8">
+                        <div className="col-sm-8 col-8">
                             <MainNav></MainNav>
                         </div>
-                        <div className="col-sm-2">
+                        <div className="col-sm-2 col-2">
                             <small>&copy; 2021</small>
                         </div>
 

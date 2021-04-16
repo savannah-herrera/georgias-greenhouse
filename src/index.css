@@ -70,7 +70,7 @@ h2 {
     text-align: center;
     color: #76C893;
     font-size: 200%;
-    margin-top: 35px;
+    margin-top: 20px;
     margin-bottom: 25px;
 }
 
@@ -83,12 +83,20 @@ h3 {
     font-family: 'Caveat', cursive;
 }
 
+.product-title {
+    color:#76C893;
+}
+
 p {
     color: #3C787E;
+    margin-bottom: 5px;
 }
 
 form {
     color: #76C893;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 li {
@@ -99,6 +107,11 @@ li {
 
 img {
     display: inline-block;
+}
+
+img.staff-pic {
+    border-radius: 50px;
+    margin-top: 5%;
 }
 
 a {
@@ -112,8 +125,11 @@ a:hover {
     color: #76C893;
 }
 
-.logo {
+#logo {
     max-width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .greeting {
@@ -139,4 +155,8 @@ a:hover {
 .call-to-action:hover {
     background-color: #3C787E;
 }
-/* @media (min-width: 760px) {} */
+
+/* @media (max-width: 760px) {
+.staffBlock {
+    display: block;
+} */
