@@ -34,7 +34,7 @@ export default function MainTemplate({ children }) {
             <footer>
                 <div className="container">
                     <div className="row">
-                        <div className="col-sm-2 col-2">
+                        <div className="col-sm-2 col-md-3">
                             <ul>
                                 <li> <img src={FacebookIcon} alt="facebook-icon"></img></li>
                                 <li> <img src={InstagramIcon} alt="instagram-icon"></img></li>
@@ -42,10 +42,10 @@ export default function MainTemplate({ children }) {
                             </ul>
                         </div>
 
-                        <div className="col-sm-8 col-8">
+                        <div className="col-sm-12 col-md-6">
                             <MainNav></MainNav>
                         </div>
-                        <div className="col-sm-2 col-2">
+                        <div className="col-sm-12 col-md-3">
                             <small>&copy; 2021</small>
                         </div>
 

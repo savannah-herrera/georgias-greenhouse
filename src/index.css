@@ -87,6 +87,12 @@ h3 {
     color:#76C893;
 }
 
+.staff-title {
+    color:#76C893;
+    font-size: 175%;
+    text-decoration: underline;
+}
+
 p {
     color: #3C787E;
     margin-bottom: 5px;
@@ -99,10 +105,30 @@ form {
     margin-right: auto;
 }
 
+form input {
+    margin-top: 8px;
+    margin-bottom: 25px;
+}
+
+form textarea {
+    margin-top: 8px;
+    margin-bottom: 25px;
+}
+
+form label {
+    font-weight: bold;
+    font-style: italic;
+}
+
+form::placeholder {
+    font-style: italic;
+}
+
 li {
     display: inline-block;
     /* flex-flow: ; */
     margin: 20px 10px auto;
+    margin-bottom: 10px;
 }
 
 img {
