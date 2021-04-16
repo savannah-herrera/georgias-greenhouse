@@ -1,6 +1,7 @@
 import React from "react"
 import MainNav from "../components/mainNav.js"
 import 'bootstrap/dist/css/bootstrap.css'
+import logo from "../images/greenhouse-logo.png"
 
 export default function MainTemplate({ children }) {
     return (
@@ -9,7 +10,7 @@ export default function MainTemplate({ children }) {
 
                 <div className="row">
                     <div className="col-1"></div>
-                    <img src="../images/greenhouse-logo.png" alt="greenhouse-logo" className="col-10"></img>
+                    <img src={logo} alt="greenhouse-logo" className="col-10 logo"></img>
                     <div className="col-1"></div>
                 </div>
                 <div className="row">

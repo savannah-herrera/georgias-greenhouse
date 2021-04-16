@@ -3,6 +3,8 @@ import * as React from "react"
 import MainTemplate from "../layouts/mainTemplate.js"
 // import { graphql } from "gatsby"
 import "../index.css"
+import sav from "../images/sav.png"
+import lex from "../images/lex.png"
 
 
 // markup
@@ -39,12 +41,12 @@ const IndexPage = () => {
           <div className="row">
             <div className="col-2 col-xs-1"></div>
             <div className="col-4 col-xs-12">
-              <img src="/" alt="staff #1"></img>
+              <img src={sav} alt="staff #1"></img>
               <h3>sav</h3>
               <p>lorem ipsum</p>
             </div>
             <div className="col-4 col-xs-12">
-              <img src="/" alt="staff #2"></img>
+              <img src={lex} alt="staff #2"></img>
               <h3>lex</h3>
               <p>lorem ipsum</p>
             </div>

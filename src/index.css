@@ -66,19 +66,6 @@ h1 {
     margin-bottom: 5px;
 }
 
-.greeting {
-    margin-top: 25px;
-}
-
-.newsletter {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.ourTeam {
-    margin-top: 50px;
-}
-
 h2 {
     text-align: center;
     color: #76C893;
@@ -98,6 +85,10 @@ h3 {
 
 p {
     color: #3C787E;
+}
+
+form {
+    color: #76C893;
 }
 
 li {
@@ -121,4 +112,31 @@ a:hover {
     color: #76C893;
 }
 
+.logo {
+    max-width: 100px;
+}
+
+.greeting {
+    margin-top: 25px;
+}
+
+.newsletter {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.ourTeam {
+    margin-top: 50px;
+}
+
+.call-to-action {
+    background-color: #76C893;
+    color: #ffffff;
+    border-radius: 5px;
+    border-color: #76C893;
+}
+
+.call-to-action:hover {
+    background-color: #3C787E;
+}
 /* @media (min-width: 760px) {} */

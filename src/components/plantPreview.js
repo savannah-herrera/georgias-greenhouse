@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function ProductPreview({ plant }) {
+export default function PlantPreview({ plant }) {
     return (
         <>
             <div className="row">
