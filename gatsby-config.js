@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Georgia's Plants",
+    title: "Georgia's Greenhouse",
   },
   plugins: [
     {
