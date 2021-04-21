@@ -3,6 +3,7 @@ import * as React from "react"
 import MainTemplate from "../layouts/mainTemplate.js"
 import "../index.css"
 // import ProductPreview from "../components/productPreview.js"
+import ProductCategory from "../components/productCategory.js"
 
 const SuppliesPage = ({ data }) => {
     return (
@@ -15,6 +16,12 @@ const SuppliesPage = ({ data }) => {
                 </div>
             </div>
 
+            <div className="container">
+                <div className="row">
+                    <ProductCategory category="supply" data={data.allContentfulPlants.nodes}></ProductCategory>
+
+                </div>
+            </div>
             {/* {data.allContentfulPlants.nodes.map(plant => (
                 <ProductPreview plant={plant}></ProductPreview>
             ))} */}
@@ -24,4 +31,35 @@ const SuppliesPage = ({ data }) => {
 }
 
 export default SuppliesPage
-
+export const query = graphql`
+query MyQueryAndMyQuery {
+    allContentfulPlants(sort: {fields: position, order: ASC}, filter: {node_locale: {eq: "en-US"}}) {
+      nodes {
+        image {
+          file {
+            url
+          }
+        }
+        commonName
+        sciName
+        light
+        category
+        id
+        price
+      }
+    }
+    allContentfulPlants(sort: {fields: position, order: ASC}, filter: {node_locale: {eq: "en-US"}}) {
+        nodes {
+          image {
+            file {
+              url
+            }
+          }
+          commonName
+          category
+          id
+          price
+        }
+      }
+  }  
+ `

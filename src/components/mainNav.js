@@ -9,7 +9,7 @@ export default function MainNav() {
             <li><Link to="/plants"><span role="img" aria-label="potted plant emoji">🪴 </span>Plants</Link></li>
             <li><Link to="/supplies"><span role="img" aria-label="gloves emoji">🧤 </span>Supplies</Link></li>
             <li><Link to="/wishlist"><span role="img" aria-label="sparkles emoji">✨ </span>Wishlist</Link></li>
-            <li><Link to="/contact"><span role="img" aria-label="shopping cart emoji">🛒 </span>Cart</Link></li>
+            <li><Link to="/cart"><span role="img" aria-label="shopping cart emoji">🛒 </span>Cart</Link></li>
         </ul>
     )
 }
