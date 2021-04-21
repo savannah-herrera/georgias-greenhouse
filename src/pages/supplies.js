@@ -9,7 +9,7 @@ const SuppliesPage = ({ data }) => {
     return (
         <MainTemplate>
             <div className="container">
-                <div className="row ourPlants">
+                <div className="row">
                     <div className="col-1"></div>
                     <h2 className="col-10"><span role="img" aria-label="gloves emoji">🧤 </span>Our Supplies<span role="img" aria-label="gloves emoji"> 🧤</span></h2>
                     <div className="col-1"></div>
@@ -19,7 +19,6 @@ const SuppliesPage = ({ data }) => {
             <div className="container">
                 <div className="row">
                     <ProductCategory category="supply" data={data.allContentfulPlants.nodes}></ProductCategory>
-
                 </div>
             </div>
             {/* {data.allContentfulPlants.nodes.map(plant => (

@@ -130,6 +130,19 @@ a:hover {
     color: #76C893;
 }
 
+div.ourPlants p:nth-child(-n+4) {
+    margin: 15px auto 15px;
+}
+
+.product-description {
+color: #3e8b92;
+}
+
+.price {
+    font-weight: bolder;
+    font-style: italic;
+    color: #16666d;
+}
 /* images */
 #logo {
     max-width: 100px;
@@ -190,6 +203,7 @@ form::placeholder {
     margin-bottom: 100px;
 }
 
+/* buttons */
 .call-to-action {
     background-color: #76C893;
     color: #ffffff;
@@ -199,6 +213,37 @@ form::placeholder {
 
 .call-to-action:hover {
     background-color: #3C787E;
+    border-color: #3C787E;
+}
+
+.add-to-cart {
+    background-color: #76C893;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: #76C893;
+}
+
+.add-to-cart:hover {
+    background-color: #3C787E;
+    border-color: #3C787E;
+    color: white;
+}
+
+.add-to-wishlist {
+    background-color: white;
+    border-radius: 5px;
+    border-color: #76C893;
+}
+
+.add-to-wishlist:hover {
+    border-color: #3C787E;
+    color: #3C787E;
+}
+
+.link-button {
+    margin-top: 25px;
+    margin-bottom: 5%;
 }
 
 .footer {

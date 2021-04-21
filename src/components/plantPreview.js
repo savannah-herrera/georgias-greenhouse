@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 export default function PlantPreview({ plant }) {
     return (
@@ -10,9 +11,11 @@ export default function PlantPreview({ plant }) {
 
 
                     <h3 dangerouslySetInnerHTML={{ __html: plant.commonName }} className="product-title"></h3>
-                    <p dangerouslySetInnerHTML={{ __html: plant.sciName }}></p>
-                    <p dangerouslySetInnerHTML={{ __html: plant.light }}></p>
-                    <h4 dangerouslySetInnerHTML={{ __html: plant.price }}></h4>
+                    <p dangerouslySetInnerHTML={{ __html: plant.sciName }} className="product-description"></p>
+                    <p dangerouslySetInnerHTML={{ __html: plant.light }} className="product-description"></p>
+                    <p dangerouslySetInnerHTML={{ __html: plant.price }} className="price"></p>
+                    <p className="link-button"><Link to={"/products/" + plant.id} className="add-to-cart">Add to Cart</Link> <Link to="/wishlist"><span role="img" aria-label="sparkles emoji" className="add-to-wishlist">✨ </span>Wishlist</Link></p>
+                    <p className="link-button"></p>
                 </div>
             </div>
         </>
