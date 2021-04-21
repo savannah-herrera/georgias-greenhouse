@@ -41,13 +41,13 @@ const IndexPage = () => {
           <div className="row">
             <div className="col-2 col-xs-0"></div>
             <div className="col-md-4 col-sm-12 staffBlock">
-              <img src={sav} alt="staff #1" className="staff-pic"></img>
+              <img src={sav} alt="staff #1" className="img-fluid staff-pic"></img>
               <h3 className="staff-title">Sav</h3>
               <p>designer, illustrator, aunt</p>
               <p>current fav plant: fishhook senecio</p>
             </div>
             <div className="col-md-4 col-sm-12 staffBlock">
-              <img src={lex} alt="staff #2" className="staff-pic"></img>
+              <img src={lex} alt="staff #2" className="img-fluid staff-pic"></img>
               <h3 className="staff-title">Lex</h3>
               <p>photographer, printmaker, cat mom</p>
               <p>current fav plant: pink princess</p>

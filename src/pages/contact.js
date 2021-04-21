@@ -9,7 +9,7 @@ export default function Contact() {
             <form name="contact" method="POST" data-netlify="true">
 
                 <div className="row justify-content-center">
-                    <div className="col-auto col-md-">
+                    <div className="col-auto">
                         <label for="firstname">First Name
                         <input type="text" id="firstname" name="firstname" placeholder="your first name" required className="form-control" />
                         </label>
@@ -43,6 +43,7 @@ export default function Contact() {
                 <button type="submit" className="btn btn-primary call-to-action justify-content-center">Contact Us</button>
 
             </form>
+
 
         </MainTemplate>
     )

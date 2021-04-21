@@ -52,6 +52,7 @@ table {
 
 /* Reset Overrides */
 
+/* headings & titles */
 body {
     margin: 25px;
     color: #76C893;
@@ -69,8 +70,8 @@ h1 {
 h2 {
     text-align: center;
     color: #76C893;
-    font-size: 200%;
-    margin-top: 20px;
+    font-size: 30px;
+    margin-top: 30px;
     margin-bottom: 25px;
 }
 
@@ -85,19 +86,79 @@ h3 {
 
 .product-title {
     color:#76C893;
+    font-size: 170%;
+    margin-top: 6%;
+    margin-bottom: 3%;
+    text-decoration: underline;
 }
 
 .staff-title {
     color:#76C893;
-    font-size: 175%;
+    font-size: 190%;
     text-decoration: underline;
 }
 
+.greeting {
+    margin-top: 25px;
+}
+
+.ourTeam {
+    margin-top: 50px;
+}
+
+/* navigation */
 p {
     color: #3C787E;
     margin-bottom: 5px;
 }
 
+li {
+    display: inline-block;
+    /* flex-flow: ; */
+    margin: 20px 10px auto;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #3C787E;
+    padding: 2px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #76C893;
+}
+
+/* images */
+#logo {
+    max-width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    display: inline-block;
+}
+
+img.staff-pic {
+    border-radius: 100px;
+    margin: 5%;
+}
+
+.img-fluid {
+    max-width: 75%;
+}
+
+img.resize {
+    /* max-width: 350px; */
+    border-radius: 250px;
+    /* display: inline-flex; */
+}
+
+
+/* forms */
 form {
     color: #76C893;
     display: block;
@@ -124,51 +185,9 @@ form::placeholder {
     font-style: italic;
 }
 
-li {
-    display: inline-block;
-    /* flex-flow: ; */
-    margin: 20px 10px auto;
-    margin-bottom: 10px;
-}
-
-img {
-    display: inline-block;
-}
-
-img.staff-pic {
-    border-radius: 50px;
-    margin-top: 5%;
-}
-
-a {
-    text-decoration: none;
-    color: #3C787E;
-    padding: 2px;
-}
-
-a:hover {
-    text-decoration: none;
-    color: #76C893;
-}
-
-#logo {
-    max-width: 100px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.greeting {
-    margin-top: 25px;
-}
-
 .newsletter {
     margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.ourTeam {
-    margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 .call-to-action {
@@ -181,6 +200,20 @@ a:hover {
 .call-to-action:hover {
     background-color: #3C787E;
 }
+
+.footer {
+    margin-top: 5%;
+}
+
+.ourPlants {
+    padding: 20px;
+}
+
+
+.staffBlock {
+    margin-bottom: 50px;
+}
+
 
 /* @media (max-width: 760px) {
 .staffBlock {
