@@ -92,6 +92,10 @@ h3 {
     text-decoration: underline;
 }
 
+.product-title:hover {
+    color:#16666d;
+}
+
 .staff-title {
     color:#76C893;
     font-size: 190%;
@@ -105,6 +109,13 @@ h3 {
 .ourTeam {
     margin-top: 50px;
 }
+
+.product-page-title {
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
+}
+
+
 
 /* navigation */
 p {
@@ -130,18 +141,30 @@ a:hover {
     color: #76C893;
 }
 
-div.ourPlants p:nth-child(-n+4) {
+div.ourPlants {
     margin: 15px auto 15px;
+}
+
+div.product-page {
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 30%;
 }
 
 .product-description {
 color: #3e8b92;
 }
 
+.product-details {
+    margin-top: 4%;
+}
+
 .price {
     font-weight: bolder;
     font-style: italic;
     color: #16666d;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 /* images */
 #logo {
@@ -222,6 +245,7 @@ form::placeholder {
     padding: 10px;
     border-radius: 5px;
     border-color: #76C893;
+    margin: 10px;
 }
 
 .add-to-cart:hover {
@@ -231,6 +255,7 @@ form::placeholder {
 }
 
 .add-to-wishlist {
+    margin: 10px;
     background-color: white;
     border-radius: 5px;
     border-color: #76C893;
@@ -242,7 +267,7 @@ form::placeholder {
 }
 
 .link-button {
-    margin-top: 25px;
+    margin-top: 7%;
     margin-bottom: 5%;
 }
 

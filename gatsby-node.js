@@ -27,7 +27,7 @@ exports.createPages = async ({ graphql, actions }) => {
       component: productTemplate,
       context: {
         // This time the entire product is passed down as context
-        product: node,
+        plant: node,
       },
     })
   })
