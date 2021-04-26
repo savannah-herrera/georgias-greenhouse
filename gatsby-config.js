@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Georgia's Greenhouse",
-    siteURL: "https://github.com/savannah-herrera/georgias-greenhouse",
+    siteUrl: "https://georgiasgreenhouse.netlify.app",
   },
   plugins: [
     {
