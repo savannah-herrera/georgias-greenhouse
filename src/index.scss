@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
+$primarycolor: #76C893;
+$secondarycolor: #3C787E;
+$accentcolorone: #16666d;
+$accentcolortwo: #3e8b92;
+$primaryfont: 'Nunito', Calibri, 'Trebuchet MS', sans-serif;
+$secondaryfont: 'Caveat', cursive;
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -55,13 +62,13 @@ table {
 /* headings & titles */
 body {
     margin: 25px;
-    color: #76C893;
-    font-family: 'Nunito', Calibri, 'Trebuchet MS', sans-serif;
+    color: $primarycolor;
+    font-family: $primaryfont;
     text-align: center;
 }
 
 h1 {
-    color: #76C893;
+    color: $primarycolor;
     text-align: center;
     font-size: 300%;
     margin-bottom: 5px;
@@ -69,7 +76,7 @@ h1 {
 
 h2 {
     text-align: center;
-    color: #76C893;
+    color: $primarycolor;
     font-size: 30px;
     margin-top: 30px;
     margin-bottom: 25px;
@@ -77,15 +84,15 @@ h2 {
 
 h3 {
     text-align: center;
-    color: #3C787E;
+    color: $secondarycolor;
     font-size: 150%;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-family: 'Caveat', cursive;
+    font-family: $secondaryfont;
 }
 
 .product-title {
-    color:#76C893;
+    color:$primarycolor;
     font-size: 170%;
     margin-top: 6%;
     margin-bottom: 3%;
@@ -93,11 +100,11 @@ h3 {
 }
 
 .product-title:hover {
-    color:#16666d;
+    color:$accentcolorone;
 }
 
 .staff-title {
-    color:#76C893;
+    color:$primarycolor;
     font-size: 190%;
     text-decoration: underline;
 }
@@ -111,15 +118,18 @@ h3 {
 }
 
 .product-page-title {
-    font-family: 'Caveat', cursive;
+    font-family: $secondaryfont;
     font-size: 50px;
 }
 
-
+.badge-color {
+    color: $primarycolor;
+    background-color: #fff;
+}
 
 /* navigation */
 p {
-    color: #3C787E;
+    color: $secondarycolor;
     margin-bottom: 5px;
 }
 
@@ -132,13 +142,13 @@ li {
 
 a {
     text-decoration: none;
-    color: #3C787E;
+    color: $secondarycolor;
     padding: 2px;
 }
 
 a:hover {
     text-decoration: none;
-    color: #76C893;
+    color: $primarycolor;
 }
 
 div.ourPlants {
@@ -152,7 +162,7 @@ margin-bottom: 30%;
 }
 
 .product-description {
-color: #3e8b92;
+color: $accentcolortwo;
 }
 
 .product-details {
@@ -162,9 +172,9 @@ color: #3e8b92;
 .price {
     font-weight: bolder;
     font-style: italic;
-    color: #16666d;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    color: $accentcolorone;
+    margin-top: 5%;
+    margin-bottom: 1%;
 }
 /* images */
 #logo {
@@ -196,7 +206,7 @@ img.resize {
 
 /* forms */
 form {
-    color: #76C893;
+    color: $primarycolor;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -226,31 +236,34 @@ form::placeholder {
     margin-bottom: 100px;
 }
 
+.orderForm {
+    margin: 100px;
+}
 /* buttons */
 .call-to-action {
-    background-color: #76C893;
+    background-color: $primarycolor;
     color: #ffffff;
     border-radius: 5px;
-    border-color: #76C893;
+    border-color: $primarycolor;
 }
 
 .call-to-action:hover {
-    background-color: #3C787E;
-    border-color: #3C787E;
+    background-color: $secondarycolor;
+    border-color: $secondarycolor;
 }
 
 .add-to-cart {
-    background-color: #76C893;
+    background-color: $primarycolor;
     color: #ffffff;
     padding: 10px;
     border-radius: 5px;
-    border-color: #76C893;
+    border-color: $primarycolor;
     margin: 10px;
 }
 
 .add-to-cart:hover {
-    background-color: #3C787E;
-    border-color: #3C787E;
+    background-color: $secondarycolor;
+    border-color: $secondarycolor;
     color: white;
 }
 
@@ -258,12 +271,12 @@ form::placeholder {
     margin: 10px;
     background-color: white;
     border-radius: 5px;
-    border-color: #76C893;
+    border-color: $primarycolor;
 }
 
 .add-to-wishlist:hover {
-    border-color: #3C787E;
-    color: #3C787E;
+    border-color: $secondarycolor;
+    color: $secondarycolor;
 }
 
 .link-button {
@@ -273,6 +286,12 @@ form::placeholder {
 
 .footer {
     margin-top: 5%;
+}
+
+.disclaimer {
+    margin: 20px auto;
+    font-size: x-small;
+    font-style: italic;
 }
 
 .ourPlants {
