@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Georgia's Greenhouse",
-    URL: "https://github.com/savannah-herrera/georgias-greenhouse",
+    siteURL: "https://github.com/savannah-herrera/georgias-greenhouse",
   },
   plugins: [
     {
