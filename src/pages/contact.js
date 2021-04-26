@@ -1,12 +1,18 @@
 import React from "react"
 import MainTemplate from "../layouts/mainTemplate.js"
+// import SEO from "../components/seo.js"
 
 export default function Contact() {
     return (
         <MainTemplate>
+
+            {/* <SEO title="Contact Us" description="Call, Email, Text or Come By"></SEO> */}
+
             <h2><span role="img" aria-label="telephone receiver emoji">📞 </span>Contact Us<span role="img" aria-label="telephone receiver emoji"> 📞</span></h2>
 
-            <form name="contact" method="POST" data-netlify="true">
+            <form name="contact" method="POST" data-netlify="true" action="/thankyou">
+
+                <input type="hidden" name="form-name" value="contact" />
 
                 <div className="row justify-content-center">
                     <div className="col-auto">

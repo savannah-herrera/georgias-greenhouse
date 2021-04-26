@@ -15,7 +15,8 @@ exports.createPages = async ({ graphql, actions }) => {
         light
         category
         id
-        price
+        priceDecimal
+        sku
       }
     }
   }  

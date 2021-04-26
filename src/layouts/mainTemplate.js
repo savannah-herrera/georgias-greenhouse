@@ -3,14 +3,15 @@ import MainNav from "../components/mainNav.js"
 // import { Link } from "gatsby"
 import 'bootstrap/dist/css/bootstrap.css'
 import logo from "../images/greenhouse-logo.png"
-import FacebookIcon from '@material-ui/icons/Facebook';
-import InstagramIcon from '@material-ui/icons/Instagram';
-import TwitterIcon from '@material-ui/icons/Twitter';
+import { CartContextProvider } from "../../shopping.js"
+// import FacebookIcon from '@material-ui/icons/Facebook';
+// import InstagramIcon from '@material-ui/icons/Instagram';
+// import TwitterIcon from '@material-ui/icons/Twitter';
 
 
 export default function MainTemplate({ children }) {
     return (
-        <>
+        <CartContextProvider>
             <header className="container">
 
                 <div className="row">
@@ -36,9 +37,9 @@ export default function MainTemplate({ children }) {
                     <div className="row">
                         <div className="col-sm-2 col-md-2">
                             <ul>
-                                <li> <img src={FacebookIcon} alt="facebook-icon"></img></li>
+                                {/* <li> <img src={FacebookIcon} alt="facebook-icon"></img></li>
                                 <li> <img src={InstagramIcon} alt="instagram-icon"></img></li>
-                                <li> <img src={TwitterIcon} alt="twitter-icon"></img></li>
+                                <li> <img src={TwitterIcon} alt="twitter-icon"></img></li> */}
                             </ul>
                         </div>
 
@@ -48,13 +49,13 @@ export default function MainTemplate({ children }) {
                         <div className="col-sm-12 col-md-2">
                             <small>&copy; 2021</small>
                         </div>
-
+                        <div className="row disclaimer">Product images from thesill.com; site for educational purposes only</div>
                     </div>
                 </div>
             </footer>
 
 
-        </>
+        </CartContextProvider>
 
     )
 }

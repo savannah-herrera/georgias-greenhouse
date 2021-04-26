@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import AddToCart from "../components/add-to-cart.js"
 
 export default function PlantPreview({ plant }) {
     return (
@@ -13,8 +14,13 @@ export default function PlantPreview({ plant }) {
                     <Link to={"/products/" + plant.id}><h3 dangerouslySetInnerHTML={{ __html: plant.commonName }} className="product-title"></h3></Link>
                     <p dangerouslySetInnerHTML={{ __html: plant.sciName }} className="product-description"></p>
                     <p dangerouslySetInnerHTML={{ __html: plant.light }} className="product-description"></p>
-                    <p dangerouslySetInnerHTML={{ __html: plant.price }} className="price"></p>
-                    <p className="link-button"><Link to="/cart" className="add-to-cart">Add to Cart</Link> <Link to="/wishlist"><span role="img" aria-label="sparkles emoji" className="add-to-wishlist">✨ </span>Wishlist</Link></p>
+                    <p className="price">${plant.priceDecimal}</p>
+                    <p className="link-button">
+
+                        <AddToCart item={{ sku: plant.sku, price: plant.priceDecimal, name: plant.commonName }}></AddToCart>
+
+                        {/* <Link to="/checkout" className="add-to-cart">Add to Cart</Link>  */}
+                        <Link to="/wishlist"><span role="img" aria-label="sparkles emoji" className="add-to-wishlist">✨ </span>Wishlist</Link></p>
                     <p className="link-button"></p>
                 </div>
             </div>

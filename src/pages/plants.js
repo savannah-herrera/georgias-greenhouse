@@ -1,7 +1,7 @@
 import { graphql } from "gatsby"
 import * as React from "react"
 import MainTemplate from "../layouts/mainTemplate.js"
-import "../index.css"
+import "../index.scss"
 // import PlantPreview from "../components/plantPreview.js"
 import ProductCategory from "../components/productCategory.js"
 
@@ -44,7 +44,8 @@ query MyQuery {
         light
         category
         id
-        price
+        priceDecimal
+        sku
       }
     }
   }  

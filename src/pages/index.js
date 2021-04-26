@@ -2,15 +2,28 @@
 import * as React from "react"
 import MainTemplate from "../layouts/mainTemplate.js"
 // import { graphql } from "gatsby"
-import "../index.css"
-import sav from "../images/sav.png"
-import lex from "../images/lex.png"
+import "../index.scss"
+// import SEO from "../components/seo.js"
+import sav from "../images/staffphoto-sav.png"
+import lex from "../images/staffphoto-lex.png"
+import Helmet from "react-helmet"
 
 
 // markup
-const IndexPage = () => {
+export default function IndexPage({ data }) {
   return (
     <MainTemplate>
+
+      <Helmet>
+        <title>Best Plants in Little Rock, AR - Georgia's Greenhouse</title>
+        <meta name="description" value="Looking for your next plant? Come see us!"></meta>
+        <meta property="og:title" content="Georgia's Greenhouse" />
+        <meta property="og:url" content="https://georgiasgreenhouse.com" />
+        <meta property="og:image" content="/" />
+      </Helmet>
+
+      {/* <SEO title="Best Plants in Little Rock, AR"></SEO> */}
+
       <div className="container greeting">
 
         <div className="row">
@@ -67,7 +80,7 @@ const IndexPage = () => {
           <div className="col-1"></div>
         </div>
 
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="newsletter" method="POST" data-netlify="true">
 
           <div className="row justify-content-center">
             <div className="col-sm-4 col-8">
@@ -102,4 +115,4 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+
