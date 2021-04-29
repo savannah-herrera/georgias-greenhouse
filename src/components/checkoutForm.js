@@ -1,7 +1,5 @@
 import React, { useState } from "react"
-// import axios from "axios"
-// import Animate from 'animate.css-react'
-// import 'animate.css/animate.css'
+import 'animate.css'
 
 export default function CheckoutForm() {
 
@@ -10,12 +8,6 @@ export default function CheckoutForm() {
 
     function saveOrder() {
         alert("This is sample cart, your order was not really completed.")
-
-        // let customer = {
-        //     fullname: fullname,
-        //     email: email,
-        // }
-        // axios.post("https://webhook.site/1022c860-ad18-46d0-9699-c8a6ad5ba435", customer);
     }
 
     return (
@@ -23,7 +15,7 @@ export default function CheckoutForm() {
             <div className="orderForm">
                 <div className="container">
                     <div className="col-12 orderTitle">
-                        <h3 className="animate__animated animate__bounce orderTitle">Your Order Reservation</h3>
+                        <h3 className="animate__animated animate__heartBeat animate__delay-3s orderTitle">Your Order Reservation</h3>
                     </div>
                     <form name="reservation" method="POST" data-netlify="true" action="/checkout">
                         <div className="row justify-content-center">

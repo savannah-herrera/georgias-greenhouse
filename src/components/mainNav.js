@@ -12,7 +12,7 @@ export default function MainNav() {
             <li><Link to="/plants"><span role="img" aria-label="seedling emoji">🌱 </span>Plants</Link></li>
             <li><Link to="/supplies"><span role="img" aria-label="gloves emoji">🧤 </span>Supplies</Link></li>
             <li><Link to="/about"><span role="img" aria-label="sparkles emoji">✨ </span>About</Link></li>
-            <li><Link to="/checkout"><span role="img" aria-label="shopping cart emoji">🛒 </span>Cart (<span className="badge badge-light badge-color">{itemCount === 0 && <strong>0</strong>
+            <li><Link to="/checkout"><span role="img" aria-label="shopping cart emoji">🛒 </span>Cart (<span className="badge badge-light badge-colors">{itemCount === 0 && <strong>0</strong>
             }
 
                 {itemCount > 0 &&
