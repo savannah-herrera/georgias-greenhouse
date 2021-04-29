@@ -2,13 +2,13 @@ import React from "react"
 import MainTemplate from "../layouts/mainTemplate.js"
 import succulents from "../images/succulents.png"
 import cacti from "../images/cacti.png"
-// import SEO from "../components/seo.js"
+import SEO from "../components/seo.js"
 
 export default function Contact() {
     return (
         <MainTemplate>
 
-            {/* <SEO title="Contact Us" description="Call, Email, Text or Come By"></SEO> */}
+            <SEO title="Contact Us" description="Talk to Us About Plants!"></SEO>
 
             <h2><span role="img" aria-label="telephone receiver emoji">📞 </span>Contact Us<span role="img" aria-label="telephone receiver emoji"> 📞</span></h2>
 

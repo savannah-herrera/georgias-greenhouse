@@ -2,25 +2,23 @@ import { graphql } from "gatsby"
 import * as React from "react"
 import MainTemplate from "../layouts/mainTemplate.js"
 import "../index.scss"
-// import PlantPreview from "../components/plantPreview.js"
 import ProductCategory from "../components/productCategory.js"
+import SEO from "../components/seo.js"
 
 const PlantPage = ({ data }) => {
   return (
     <MainTemplate>
+      <SEO title="Our Plants" description="Check out our selection of houseplants"></SEO>
       <div className="container">
         <div className="row">
-          {/* <div className="col-1"></div> */}
+
           <h2 className="col-12"><span role="img" aria-label="seedling emoji">🌱 </span>Our Plants<span role="img" aria-label="seedling emoji"> 🌱</span></h2>
-          {/* <div className="col-1"></div> */}
+
         </div>
       </div>
       <div className="container">
         <div className="row">
           <ProductCategory category="plant" data={data.allContentfulPlants.nodes}></ProductCategory>
-          {/* {data.allContentfulPlants.nodes.map(plant => (
-            <PlantPreview plant={plant}></PlantPreview>
-          ))} */}
         </div>
       </div>
 
@@ -46,6 +44,7 @@ query MyQuery {
         id
         priceDecimal
         sku
+        slug
       }
     }
   }  

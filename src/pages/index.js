@@ -3,8 +3,7 @@ import MainTemplate from "../layouts/mainTemplate.js"
 import "../index.scss"
 import headerImage from "../images/greenhouse.png"
 import handsImage from "../images/hands-with-succulents.png"
-// import SEO from "../components/seo.js"
-import Helmet from "react-helmet"
+import SEO from "../components/seo.js"
 
 
 // markup
@@ -12,15 +11,7 @@ export default function IndexPage({ data }) {
   return (
     <MainTemplate>
 
-      <Helmet>
-        <title>Best Plants in Little Rock, AR - Georgia's Greenhouse</title>
-        <meta name="description" value="Looking for your next plant? Come see us!"></meta>
-        <meta property="og:title" content="Georgia's Greenhouse" />
-        <meta property="og:url" content="https://georgiasgreenhouse.com" />
-        <meta property="og:image" content="/" />
-      </Helmet>
-
-      {/* <SEO title="Best Plants in Little Rock, AR"></SEO> */}
+      <SEO title="Best Plants in Little Rock, AR"></SEO>
 
       <div className="container greeting">
 

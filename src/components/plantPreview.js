@@ -11,7 +11,7 @@ export default function PlantPreview({ plant }) {
                     <img src={plant.image.file.url} alt={plant.commonName} key={plant.id} className="resize img-fluid" />
 
 
-                    <Link to={"/products/" + plant.id}><h3 dangerouslySetInnerHTML={{ __html: plant.commonName }} className="product-title"></h3></Link>
+                    <Link to={"/products/" + plant.slug}><h3 dangerouslySetInnerHTML={{ __html: plant.commonName }} className="product-title"></h3></Link>
                     <p dangerouslySetInnerHTML={{ __html: plant.sciName }} className="product-description"></p>
                     <p dangerouslySetInnerHTML={{ __html: plant.light }} className="product-description"></p>
                     <p className="price">${plant.priceDecimal}</p>

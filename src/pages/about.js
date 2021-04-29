@@ -5,12 +5,14 @@ import lex from "../images/staffphoto-lex-new.png"
 import krystal_aya from "../images/krystal&aya.png"
 import trav from "../images/trav.png"
 import bex from "../images/bex.png"
-// import Wishlist from "../components/wishlistComponent.js"
 import "../index.scss"
+import SEO from "../components/seo.js"
 
 const AboutPage = () => {
     return (
         <MainTemplate>
+
+            <SEO title="About Us" description="Learn more about our community of plant lovers"></SEO>
             <div className="container">
                 <h2><span role="img" aria-label="sparkles emoji">✨ </span>About Us<span role="img" aria-label="sparkles emoji"> ✨</span></h2>
 

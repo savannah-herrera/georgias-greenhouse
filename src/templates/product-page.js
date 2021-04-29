@@ -1,9 +1,8 @@
 import React from "react"
 import MainTemplate from "../layouts/mainTemplate.js"
 import AddToCart from "../components/add-to-cart.js"
-// import ProductCategory from "../components/productCategory.js"
-import { Link } from "gatsby"
 import "../index.scss"
+import SEO from "../components/seo.js"
 
 export default function ProductPage({ pageContext }) {
 
@@ -12,6 +11,8 @@ export default function ProductPage({ pageContext }) {
     return (
         <>
             <MainTemplate>
+
+                <SEO title={plant.commonName} description={`Come see our ${plant.light}s at Georgia's Greenhouse`}></SEO>
                 <div className="container col-md-6 col-sm-12">
                     <div className="product-page">
                         <h2 className="product-page-title">{plant.commonName}</h2>
@@ -31,7 +32,7 @@ export default function ProductPage({ pageContext }) {
 
                             {/* <Link to={"/checkout"} className="add-to-cart">Add to Cart</Link> */}
 
-                            <Link to="/wishlist"><span role="img" aria-label="sparkles emoji" className="add-to-wishlist">✨ </span>Wishlist</Link></p>
+                        </p>
                     </div>
                 </div>
 

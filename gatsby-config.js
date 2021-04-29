@@ -1,7 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: "Georgia's Greenhouse",
+    titleTemplate: "%s - Georgia's Greenhouse",
+    description: "Looking for your next plant in Little Rock? Come see us!",
     siteUrl: "https://georgiasgreenhouse.netlify.app",
+    url: "https://georgiasgreenhouse.netlify.app",
+    image: "/images/greenhouse.png",
   },
   plugins: [
     {
