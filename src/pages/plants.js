@@ -10,9 +10,9 @@ const PlantPage = ({ data }) => {
     <MainTemplate>
       <div className="container">
         <div className="row">
-          <div className="col-1"></div>
-          <h2 className="col-10"><span role="img" aria-label="potted plant emoji">🪴 </span>Our Plants<span role="img" aria-label="potted plant emoji"> 🪴</span></h2>
-          <div className="col-1"></div>
+          {/* <div className="col-1"></div> */}
+          <h2 className="col-12"><span role="img" aria-label="seedling emoji">🌱 </span>Our Plants<span role="img" aria-label="seedling emoji"> 🌱</span></h2>
+          {/* <div className="col-1"></div> */}
         </div>
       </div>
       <div className="container">

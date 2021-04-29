@@ -46,7 +46,9 @@ export default function Cart() {
                     <br />
                     Shipping: ${shipping.toFixed(2)}
                     <br />
-                    Grand Total: <strong>${grandTotal.toFixed(2)}</strong>
+                    <span className="total">
+                        Grand Total: <strong >${grandTotal.toFixed(2)}</strong>
+                    </span>
                 </div>
             </div>
 

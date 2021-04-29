@@ -2,7 +2,7 @@
   "name": "georgia-s-plants",
   "version": "1.0.0",
   "private": true,
-  "description": "Georgia's Plants",
+  "description": "Georgia's Greenhouse",
   "author": "Savannah Herrera",
   "keywords": [
     "gatsby"
@@ -17,6 +17,8 @@
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
+    "animate.css": "^4.1.1",
+    "animate.css-react": "^1.1.0",
     "bootstrap": "^4.6.0",
     "gatsby": "^3.2.1",
     "gatsby-plugin-google-analytics": "^3.2.0",

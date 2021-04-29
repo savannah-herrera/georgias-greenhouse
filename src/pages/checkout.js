@@ -8,10 +8,11 @@ import "../index.scss"
 export default function CartPage() {
     return (
         <MainTemplate>
-            <h2><span role="img" aria-label="shopping cart emoji">🛒 </span>Shopping Cart<span role="img" aria-label="shopping cart emoji"> 🛒</span></h2>
-            <Cart></Cart>
-            <p>purchases?????</p>
-
+            <h2><span role="img" aria-label="shopping cart emoji">🛒 </span>Cart<span role="img" aria-label="shopping cart emoji"> 🛒</span></h2>
+            <div className="cart">
+                <Cart></Cart>
+            </div>
+            <hr />
             <CheckoutForm></CheckoutForm>
 
         </MainTemplate>

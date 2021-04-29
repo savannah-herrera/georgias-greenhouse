@@ -61,10 +61,14 @@ table {
 
 /* headings & titles */
 body {
-    margin: 25px;
+    margin: 5px;
+    padding: 25px;
     color: $primarycolor;
     font-family: $primaryfont;
     text-align: center;
+    border-width: 10px;
+    border-color: $primarycolor;
+    border-style: solid;
 }
 
 h1 {
@@ -74,10 +78,15 @@ h1 {
     margin-bottom: 5px;
 }
 
+.col-12 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 h2 {
     text-align: center;
     color: $primarycolor;
-    font-size: 30px;
+    font-size: 175%;
     margin-top: 30px;
     margin-bottom: 25px;
 }
@@ -99,6 +108,9 @@ h3 {
     text-decoration: underline;
 }
 
+.small {
+    margin-top: 100px;
+}
 .product-title:hover {
     color:$accentcolorone;
 }
@@ -138,6 +150,7 @@ li {
     /* flex-flow: ; */
     margin: 20px 10px auto;
     margin-bottom: 10px;
+    font-weight: 600;
 }
 
 a {
@@ -161,6 +174,20 @@ margin-right: auto;
 margin-bottom: 30%;
 }
 
+.introText p {
+text-align: center;
+font-size: 110%;
+font-weight: 600;
+line-height: 140%;
+margin-top: 10px;
+}
+
+.newsletterSub {
+    font-family: $secondaryfont;
+    font-size: 150%;
+    margin-bottom: 30px;
+}
+
 .product-description {
 color: $accentcolortwo;
 }
@@ -176,6 +203,17 @@ color: $accentcolortwo;
     margin-top: 5%;
     margin-bottom: 1%;
 }
+
+.teamAbout {
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 200px;
+}
+
+
+
+
+
 /* images */
 #logo {
     max-width: 100px;
@@ -194,15 +232,70 @@ img.staff-pic {
 }
 
 .img-fluid {
-    max-width: 75%;
+    max-width: 100%;
+}
+
+img.headerImage {
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 5%;
+    max-width: 100%;
+}
+
+img.newsletterImage {
+    border-radius: 25px;
+    margin: auto;
+   margin-top: 40px;
+   margin-bottom: 5%;
 }
 
 img.resize {
-    /* max-width: 350px; */
+    // max-width: 250px;
     border-radius: 250px;
     /* display: inline-flex; */
 }
 
+.friends img {
+    max-width: 33%;
+    border-radius: 100px;
+    margin: .1%;
+}
+
+.friendsBlock {
+    margin-top: 5%;
+}
+
+img.contactImage {
+    max-width: 30%;
+    border-radius: 100px;
+    margin: auto;
+    margin-bottom: 5%;
+    margin-top: 15%;
+}
+
+
+// cart
+.cart {
+    margin-top: 50px;   
+    margin-bottom: 5%;
+}
+
+.cart-styles {
+    margin-bottom: 25%;
+}
+
+.total {
+    font-style: italic;
+    font-weight: 700;
+    color: #61cc87; 
+    // padding-top: 51px;
+    line-height: 35px;
+}
+
+.orderTitle {
+    display: inline-block;
+}
 
 /* forms */
 form {
@@ -236,9 +329,14 @@ form::placeholder {
     margin-bottom: 100px;
 }
 
-.orderForm {
-    margin: 100px;
+.orderTitle h3 {
+    margin-bottom: 20px;
 }
+
+.orderForm {
+    margin-top: 30px;
+}
+
 /* buttons */
 .call-to-action {
     background-color: $primarycolor;
@@ -304,7 +402,71 @@ form::placeholder {
 }
 
 
-/* @media (max-width: 760px) {
-.staffBlock {
-    display: block;
-} */
+
+
+@media (max-width: 760px) {
+
+body {
+    padding: 5px;
+}
+img.img-fluid {
+    max-width: 100%;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+div.container {
+    padding: 0px 10px;
+}
+
+div.ourPlants {
+    padding: 2px;
+}
+
+div.staffBlock {
+    padding: 0px 5px;
+}
+
+.friends img {
+    margin-bottom: 10%;
+    max-width: 100%;
+}
+
+#logo {
+    margin-top: 5%;
+}
+h1 {
+    font-size: 250%;
+}
+
+h2 {
+    font-size: 150%;
+}
+}
+
+@media (max-width: 653px) {
+    img.img-fluid {
+        max-width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .friends img {
+        margin-bottom: 10%;
+        max-width: 100%;
+    }
+    
+    h1 {
+        font-size: 220%;
+        text-align: center;
+        margin-left: 0px;
+    }
+    
+    h2 {
+        font-size: 150%;
+    }
+
+    .cart-styles {
+        margin-left: 0px;
+    }
+}

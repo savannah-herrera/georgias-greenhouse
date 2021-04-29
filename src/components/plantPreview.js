@@ -20,8 +20,8 @@ export default function PlantPreview({ plant }) {
                         <AddToCart item={{ sku: plant.sku, price: plant.priceDecimal, name: plant.commonName }}></AddToCart>
 
                         {/* <Link to="/checkout" className="add-to-cart">Add to Cart</Link>  */}
-                        <Link to="/wishlist"><span role="img" aria-label="sparkles emoji" className="add-to-wishlist">✨ </span>Wishlist</Link></p>
-                    <p className="link-button"></p>
+
+                    </p>
                 </div>
             </div>
         </>
